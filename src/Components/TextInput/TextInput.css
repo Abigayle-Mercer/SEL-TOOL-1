@@ -1,0 +1,28 @@
+.title2 {
+    font-weight: bold;
+    color: grey;
+    font-size: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.question {
+    text-align: left;
+}
+
+.ql-editor{
+    min-height:200px;
+    
+}
+
+.input {
+    margin-bottom: 25px;
+    margin-top: 15px;
+    width: 500px;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: grey;
+    border-radius: 20px;
+    padding: 10px;
+   
+}
