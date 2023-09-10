@@ -205,7 +205,7 @@ export default class Home extends Component {
               <Banner t1={"Prompts"} t2={"SEL Wheel"}></Banner>
               <Routes>
                 <Route
-                  path="/SEL-Tool-1"
+                  path="/SEL-TOOL-1"
                   element={<Navigate to="/Prompts" />} // Redirect root to Prompts
                 /> 
                 <Route

@@ -2,6 +2,7 @@
   "name": "tool1",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://abigayle-mercer.github.io/SEL-TOOL-1/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -16,12 +17,12 @@
     "rsuite": "^5.39.0",
     "web-vitals": "^2.1.4"
   },
-"scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "deploy": "gh-pages -d build --branch gh-pages", 
-  "eject": "react-scripts eject"
-},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build --branch gh-pages",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
