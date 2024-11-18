@@ -16,7 +16,7 @@ function PromptComponent(props) {
     <div>
       <div className="QuestionsBlock">
           <IndividualPrompt
-            slices={props.slices}
+            prompts={props.prompts}
             selectScore={props.selectScore}
             add={0}
           />

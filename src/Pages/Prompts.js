@@ -32,7 +32,7 @@ function Prompts(props) {
       </div>
 
       <PromptComponent
-        slices={props.slices}
+        prompts={props.prompts}
         selectScore={props.selectScore}
       ></PromptComponent>
     </div>

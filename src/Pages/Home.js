@@ -8,6 +8,39 @@ import ScrollToTop from "../Components/ScrollToTop/ScrollToTop";
 
 export default class Home extends Component {
   state = {
+    categories: [
+    {title: 'RESPONSIBLE DECISION MAKING', _id: '0', surveyId: '66', y: 32},
+    {title: 'RELATIONSHIP SKILLS', _id: '1', surveyId: '66', y: 32},
+    {title: 'SOCIAL AWARENESS', _id: '2', surveyId: '66', y: 32},
+    {title: 'SELF-MANAGEMENT', _id: '3', surveyId: '66', y: 32},
+    {title: 'SELF-AWARENESS', _id: '4', surveyId: '66', y: 32}
+    ],
+    prompts: [
+      {text: 'I take time for self reflection and group reflection on progress toward goals and the process used.', title: "RESPONSIBLE DECISION MAKING", categoryId: '0', fill: '#00A9B5', transform: '0.01', y: 1, _id: 1},
+      {text: 'I consider how my choices will be viewed through the lens of the young people I serve and the community around them.', title: "", categoryId: '0', fill: '#00A9B5', transform: '0.01', y: 1, _id: 2},
+      {text: "I find practical and respectful ways to overcome difficulty, even when it comes to making decisions that may not be popular.", title: "", categoryId: '0', fill: '#00A9B5', transform: '0.01', y: 1, _id: 3},
+      {text: "I involve others who are impacted to explore a problem collaboratively before choosing a solution or launching a new project.", title: "", categoryId: '0', fill: '#00A9B5', transform: '0.01', y: 1, _id: 4},
+
+      {text: 'I can work through my discomfort when dealing with conflict, listen to feelings from all parties, and help them understand different perspectives.', title: "RELATIONSHIP SKILLS", categoryId: '1', fill: '#357AFF', transform: '0.01', y: 1, _id: 5},
+      {text: 'I openly admit my mistakes to myself and others and work to make things right.', title: "", categoryId: '1', fill: '#357AFF', transform: '0.01', y: 1, _id: 6},
+      {text: "When I am upset with someone, I talk to them about how I feel and listen to their perspective.", title: "", categoryId: '1', fill: '#357AFF', transform: '0.01', y: 1, _id: 7},
+      {text: "I stay focused when listening to others and carefully consider their meaning.", title: "", categoryId: '1', fill: '#357AFF', transform: '0.01', y: 1, _id: 8},
+
+      {text: 'I learn from those who have different opinions than me.', title: "SOCIAL AWARENESS", categoryId: '2', fill: '#9245FF', transform: '0.01', y: 1, _id: 9},
+      {text: 'I show care for others when I see that they have been harmed in some way.', title: "", categoryId: '2', fill: '#9245FF', transform: '0.01', y: 1, _id: 10},
+      {text: "I pay attention to the feelings of others and recognize how my words and behavior impact them.", title: "", categoryId: '2', fill: '#9245FF', transform: '0.01', y: 1, _id: 11},
+      {text: "I can grasp a person's perspective and feelings from both verbal and nonverbal cues.", title: "", categoryId: '2', fill: '#9245FF', transform: '0.01', y: 1, _id: 12},
+
+      {text: 'I balance my work life with personal renewal time.', title: "SELF-MANAGEMENT", categoryId: '3', fill: '#FF5C00', transform: '0.01', y: 1, _id: 13},
+      {text: 'I set measurable, challenging, and attainable goals and have clear steps in place to reach them.', title: "", categoryId: '3', fill: '#FF5C00', transform: '0.01', y: 1, _id: 14},
+      {text: "I can calm myself when I feel stressed or nervous.", title: "", categoryId: '3', fill: '#FF5C00', transform: '0.01', y: 1, _id: 15},
+      {text: "I consistently find ways to manage strong emotions in ways that don't negatively impact others.", title: "", categoryId: '3', fill: '#FF5C00', transform: '0.01', y: 1, _id: 16},
+
+      {text: 'I recognize and reflect on ways in which my identity shapes my views, biases, and prejudices.', title: "SELF-AWARENESS", categoryId: '4', fill: '#FF234B', transform: '0.01', y: 1, _id: 17},
+      {text: 'I consistently recognize and reflect on ways in which my identity is shaped by other people and my race, culture, experiences and environment.', title: "", categoryId: '4', fill: '#FF234B', transform: '0.01', y: 1, _id: 18},
+      {text: "I use self-reflection to understand the factors that contribute to my emotions and how my emotions impact me.", title: "", categoryId: '4', fill: '#FF234B', transform: '0.01', y: 1, _id: 19},
+      {text: "I can consistently identify and name my emotions in the moment.", title: "", categoryId: '4', fill: '#FF234B', transform: '0.01', y: 1, _id: 20},
+    ],
     slices: [
       {
         id: 1,
@@ -192,7 +225,7 @@ export default class Home extends Component {
       targetValue = 1.0;
     }
     const newState = { ...this.state };
-    newState.slices[question].transform = targetValue.toString();
+    newState.prompts[question].transform = targetValue.toString();
     this.setState(newState);
   };
 // noah says hi
@@ -212,7 +245,7 @@ export default class Home extends Component {
                   path="/Prompts"
                   element={
                     <Prompts
-                      slices={this.state.slices}
+                      prompts={this.state.prompts}
                       selectScore={this.selectScore}
                     />
                   }
@@ -221,7 +254,7 @@ export default class Home extends Component {
               <Routes>
                 <Route
                   path="/Wheel"
-                  element={<Wheel slices={this.state.slices} />}
+                  element={<Wheel categories={this.state.categories} prompts={this.state.prompts} />}
                 />
               </Routes>
             </div>

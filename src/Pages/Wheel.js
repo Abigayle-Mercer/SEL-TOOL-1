@@ -74,7 +74,8 @@ function Wheel(props) {
         <div id="outermost">
           <div className="wrap">
             <Chart
-              slices={props.slices}
+              prompts={props.prompts}
+              categories={props.categories}
               title={"SEL Competencies Reflection"}
             ></Chart>
           </div>
