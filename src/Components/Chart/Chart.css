@@ -2,36 +2,42 @@
   display: flex;
  
   align-items: center;
-  height: 60vh; /* Adjust the height based on your needs */
- 
-  width: 60vh;
-    
-  font-weight: bold;
   
+ 
+  width: 90vh;
+  margin-left: -90px;
+  font-weight: bold;
+  font-family: inherit;
  
   
 }
 
-  .l1 {
-    margin-bottom: 190px;
-    width: 130px;
-    margin-right: -35px;
+.piechart {
+  margin-top: -80px;
+}
+
+  
+
+.l1 {
+  margin-bottom: 190px;
+  width: 130px;
+  margin-right: -35px;
 }
 
 .l2 {
-    margin-bottom: 12px;
-    margin-right: -35px;
-    width: 60px;
+  margin-bottom: 12px;
+  margin-right: -35px;
+  width: 60px;
 }
 
 .l3 {
- margin-bottom: 190px;
- margin-left: -15px;
- width: 70px;
-  justify-content: center;
-  align-items: center;
-  
- 
+margin-bottom: 190px;
+margin-left: -15px;
+width: 70px;
+justify-content: center;
+align-items: center;
+
+
 }
 
 .l4 {
@@ -50,6 +56,8 @@
     margin-bottom: 10px;
     width: 130px;
 }
+
+
 
 .bottomlabels {
      display: flex;
@@ -72,12 +80,12 @@
 }
 
 .t1 {
-   
+   margin-top: -100px;
     font-size: 20px;
     font-family: Helvetica;
     font-weight: bold;
     color: grey;
-    margin-bottom: 50px;
+   
     
     
 }
@@ -95,10 +103,10 @@
 /* Container for each chart */
 .Wrapper {
     /* Center the boxes horizontally */
-  margin-bottom: 30px; /* Add some space between charts */
+  
  align-items: center;
  align-self: center;
-  margin-bottom: 220px;
+  
   margin-left: 30%;
  
   
