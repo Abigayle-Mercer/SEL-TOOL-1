@@ -59,35 +59,7 @@ function Pie(props) {
       </svg>
       <VictoryStack height={500} width={800}>
     
-      <VictoryPie
-        data={props.categories}
-        labels={({datum}) => `${datum.title}`}
-       
-        radius={199} // Adjust the radius for the outer wheel
-        style={{
-          data: {
-            fill: "transparent",
-            stroke: "white",
-            strokeWidth: 1.5
-            
-          },
-          labels: { 
-            padding: 37,
-            fontFamily: "inherit", // Change this to your desired font
-            fontSize: 14,        // Adjust font size as needed
-            fill: "#333333"      // Change label color if needed
-          }
-          
-          
-        }}
-        labelComponent={
-          <VictoryLabel 
-          labelPlacement='perpendicular'
-          dy={-12}
-          />
-        }
       
-      />
       <VictoryPie
      
     
@@ -115,6 +87,7 @@ function Pie(props) {
             color: "red"
           }}
           constrainToVisibleArea
+          
           />
         }
       />
