@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/SEL-TOOL-1/static/css/main.4635dc9d.css",
-    "main.js": "/SEL-TOOL-1/static/js/main.fed2720c.js",
+    "main.js": "/SEL-TOOL-1/static/js/main.a573d6e3.js",
     "static/js/703.ffb938b0.chunk.js": "/SEL-TOOL-1/static/js/703.ffb938b0.chunk.js",
     "static/js/513.47d6f8e4.chunk.js": "/SEL-TOOL-1/static/js/513.47d6f8e4.chunk.js",
     "static/js/787.50cb0a82.chunk.js": "/SEL-TOOL-1/static/js/787.50cb0a82.chunk.js",
     "index.html": "/SEL-TOOL-1/index.html",
     "main.4635dc9d.css.map": "/SEL-TOOL-1/static/css/main.4635dc9d.css.map",
-    "main.fed2720c.js.map": "/SEL-TOOL-1/static/js/main.fed2720c.js.map",
+    "main.a573d6e3.js.map": "/SEL-TOOL-1/static/js/main.a573d6e3.js.map",
     "703.ffb938b0.chunk.js.map": "/SEL-TOOL-1/static/js/703.ffb938b0.chunk.js.map",
     "513.47d6f8e4.chunk.js.map": "/SEL-TOOL-1/static/js/513.47d6f8e4.chunk.js.map",
     "787.50cb0a82.chunk.js.map": "/SEL-TOOL-1/static/js/787.50cb0a82.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4635dc9d.css",
-    "static/js/main.fed2720c.js"
+    "static/js/main.a573d6e3.js"
   ]
 }
